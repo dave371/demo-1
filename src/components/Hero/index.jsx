@@ -1,0 +1,52 @@
+'use client';
+
+import { roboto } from '@/app/fonts';
+import { raleway } from '@/app/fonts';
+import Button from '../ui/Button';
+import { useRouter } from 'next/navigation';
+import { ArrowLongRightIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
+import heroImage from '../../../public/hero.png';
+
+export default function Hero() {
+  return (
+    <div
+      className={`${roboto.className} md:flex md:items-center md:justify-between`}
+    >
+      <HeroText />
+      <HeroImage />
+    </div>
+  );
+}
+
+function HeroText() {
+  const router = useRouter();
+
+  return (
+    <div>
+      <h1 className="mt-12 text-4xl font-black">Achieve Your Fitness Goals</h1>
+
+      <p className={`mt-8 text-2xl lg:w-[70%] ${raleway.className}`}>
+        Experience The Benefits of One-On-One Coaching From Your Home.
+      </p>
+
+      <Button
+        className="flex items-center justify-center w-full gap-2 p-3 text-lg font-medium rounded-md mt-9 bg-secondary md:w-fit"
+        onClick={() => router.push('/pricing')}
+      >
+        Start Your Fitness Journey Now
+        <ArrowLongRightIcon class="h-8 w-8 text-main-text-color" />
+      </Button>
+    </div>
+  );
+}
+
+function HeroImage() {
+  return (
+    <Image
+      src={heroImage}
+      alt="picture of the personal trainer robert"
+      className="mt-7"
+    />
+  );
+}
