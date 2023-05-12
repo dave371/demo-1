@@ -8,8 +8,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`lg:w-[75%] m-auto p-5 ${raleway.className}`}>
-      <body>{children}</body>
+    <html
+      lang="en"
+      className={`xl:w-[90%] 2xl:w-[75%] m-auto p-5 ${raleway.className}`}
+    >
+      <body class="debug-screens">{children}</body>
     </html>
   );
 }
