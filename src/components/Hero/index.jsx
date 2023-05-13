@@ -11,7 +11,7 @@ import heroImage from '../../../public/hero.png';
 export default function Hero() {
   return (
     <div
-      className={`${roboto.className} md:flex md:items-center md:justify-between`}
+      className={`${roboto.className} flex flex-col gap-5 md:gap-0 md:flex-row md:items-center md:justify-between`}
     >
       <HeroText />
       <HeroImage />
@@ -24,7 +24,7 @@ function HeroText() {
 
   return (
     <div>
-      <h1 className="mt-12 text-4xl font-black">Achieve Your Fitness Goals</h1>
+      <h1 className="text-4xl font-black">Achieve Your Fitness Goals</h1>
 
       <p className={`mt-8 text-2xl lg:w-[70%] ${raleway.className}`}>
         Experience The Benefits of One-On-One Coaching From Your Home.
@@ -35,7 +35,7 @@ function HeroText() {
         onClick={() => router.push('/pricing')}
       >
         Start Your Fitness Journey Now
-        <ArrowLongRightIcon class="h-8 w-8 text-main-text-color" />
+        <ArrowLongRightIcon className="w-8 h-8 text-main-text-color" />
       </Button>
     </div>
   );
@@ -46,7 +46,8 @@ function HeroImage() {
     <Image
       src={heroImage}
       alt="picture of the personal trainer robert"
-      className="mt-7"
+      className="mx-auto md:mx-0"
+      priority
     />
   );
 }

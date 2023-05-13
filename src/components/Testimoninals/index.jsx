@@ -26,7 +26,7 @@ export default function Testimonials() {
         Testimonials
       </h2>
 
-      <div className="flex flex-col gap-32 md:items-center xl:flex-row xl:items-stretch">
+      <div className="flex flex-col gap-16 py-14 md:items-center xl:flex-row xl:items-stretch">
         {data.map((testimonial) => (
           <TestimonialCard
             key={testimonial.name}

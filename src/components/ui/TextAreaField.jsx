@@ -13,7 +13,6 @@ export default function TextAreaField({ name, ...rest }) {
         }`}
         name={name}
         {...rest}
-        s
         {...field}
       ></textarea>
 

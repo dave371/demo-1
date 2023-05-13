@@ -44,10 +44,10 @@ export default function Services() {
   return (
     <section className="mt-12">
       <h2 className={`mb-8 font-semibold text-2xl ${roboto.className}`}>
-        Services
+        Features
       </h2>
 
-      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-20 py-16 md:grid-cols-2 lg:grid-cols-4">
         {data.map((item) => (
           <ServiceCard
             key={item.title}

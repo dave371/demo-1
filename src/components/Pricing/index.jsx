@@ -50,7 +50,7 @@ export default function Pricing() {
         Pricing
       </h2>
 
-      <div className="flex flex-col items-center justify-center gap-5 lg:flex-row">
+      <div className="flex flex-col items-center justify-between gap-16 py-20 lg:flex-row">
         {data.map((plan) => (
           <PriceCard
             key={plan.planName}
@@ -80,8 +80,8 @@ function PriceCard({ name, price, perks, cta }) {
           <h4 className={`${roboto.className} font-black text-3xl`}>{price}</h4>
           <p className={`${roboto.className} text-lg`}>/per month</p>
         </div>
-        <div className="w-full h-[2px] bg-main-text-color" />
-        <ul className="flex flex-col gap-5 mt-5">
+        <div className="w-full h-[2px] bg-main-text-color rounded" />
+        <ul className="flex flex-col gap-5 mx-auto mt-5 w-fit">
           {perks.map((perk) => (
             <PerkItem key={perk} perk={perk} />
           ))}

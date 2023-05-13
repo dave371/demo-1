@@ -16,9 +16,9 @@ export default function Footer() {
         <FooterLink name="Privacy" path="/privacy" />
       </ul>
 
-      <div className="w-full h-[2px] bg-white" />
+      <div className="w-full h-[1px] bg-white rounded" />
 
-      <p className="font-medium">2020 VirtualFit, Inc. All rights reserved.</p>
+      <p>2020 VirtualFit, Inc. All rights reserved.</p>
     </footer>
   );
 }
@@ -26,7 +26,7 @@ export default function Footer() {
 function FooterLink({ name, path }) {
   return (
     <li className="flex items-center justify-center">
-      <Link className="p-3 text-lg font-medium text-center" href={path}>
+      <Link className="px-3 text-lg text-center" href={path}>
         {name}
       </Link>
     </li>

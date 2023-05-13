@@ -8,7 +8,6 @@ import { routes } from '@/app/variables/routes';
 import { roboto } from '@/app/fonts';
 import { usePathname, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-
 import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
 export default function MobileViewLinks() {
@@ -20,7 +19,7 @@ export default function MobileViewLinks() {
         className={`p-2 bg-transparent rounded`}
         onClick={() => setIsOpen(true)}
       >
-        <Bars3BottomRightIcon class="h-8 w-8 text-main-text-color" />
+        <Bars3BottomRightIcon className="w-8 h-8 text-main-text-color" />
       </Button>
 
       <AnimatePresence>
@@ -63,7 +62,7 @@ function MenuModal({ isOpen, setIsOpen }) {
               className={`p-2 bg-transparent rounded`}
               onClick={() => setIsOpen(false)}
             >
-              <XMarkIcon class="h-8 w-8 text-main-text-color" />
+              <XMarkIcon className="w-8 h-8 text-main-text-color" />
             </Button>
           </div>
           <nav>

@@ -9,13 +9,11 @@ import Testimonials from '@/components/Testimoninals';
 export default function Home() {
   return (
     <>
-      <Navbar />
       <Hero />
       <Services />
       <Pricing />
       <Testimonials />
       <Contact />
-      <Footer />
     </>
   );
 }
