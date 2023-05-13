@@ -17,9 +17,3 @@ export const robotoItalic = Roboto({
   weight: ['400'],
   display: 'swap',
 });
-
-export const catamaran = Catamaran({
-  subsets: ['latin'],
-  weight: ['400'],
-  display: 'swap',
-});
