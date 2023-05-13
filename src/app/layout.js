@@ -1,5 +1,7 @@
 import './globals.css';
 import { raleway } from './fonts';
+import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
 
 export const metadata = {
   title: 'Create Next App',
@@ -8,11 +10,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`xl:w-[90%] 2xl:w-[65%] m-auto p-5 ${raleway.className}`}
-    >
-      <body class="debug-screens">{children}</body>
+    <html lang="en">
+      <body className={`${raleway.className} debug-screens flex flex-col`}>
+        <Navbar />
+        <main className="p-5 grow xl:w-[90%] 2xl:w-[75%] lg:mx-auto">
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }
