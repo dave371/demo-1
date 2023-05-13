@@ -2,9 +2,9 @@
 
 import { roboto } from '@/app/fonts';
 import { CheckCircleIcon } from '@heroicons/react/24/outline';
-import Button from '../ui/Button';
+import Button from './ui/Button';
 
-export default function Pricing() {
+export default function PlanSection() {
   const data = [
     {
       planName: 'Basic Training Plan',

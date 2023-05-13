@@ -1,7 +1,7 @@
 import { roboto } from '@/app/fonts';
 import { robotoItalic } from '@/app/fonts';
 
-export default function Testimonials() {
+export default function TestimonialSection() {
   const data = [
     {
       name: 'Sarah Johnson',

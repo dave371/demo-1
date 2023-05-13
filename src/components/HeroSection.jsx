@@ -2,13 +2,13 @@
 
 import { roboto } from '@/app/fonts';
 import { raleway } from '@/app/fonts';
-import Button from '../ui/Button';
+import Button from './ui/Button';
 import { useRouter } from 'next/navigation';
 import { ArrowLongRightIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
-import heroImage from '../../../public/hero.png';
+import heroImage from '../../public/hero.png';
 
-export default function Hero() {
+export default function HeroSection() {
   return (
     <div
       className={`${roboto.className} flex flex-col gap-5 md:gap-0 md:flex-row md:items-center md:justify-between`}

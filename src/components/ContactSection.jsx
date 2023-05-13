@@ -1,7 +1,7 @@
 import { roboto } from '@/app/fonts';
-import ContactForm from '../ui/ContactForm';
+import ContactForm from './ui/ContactForm';
 
-export default function Contact() {
+export default function ContactSection() {
   return (
     <section className="mt-12">
       <h2 className={`mb-16 font-semibold text-2xl ${roboto.className}`}>

@@ -7,7 +7,7 @@ import {
   AcademicCapIcon,
 } from '@heroicons/react/24/outline';
 
-export default function Services() {
+export default function FeatureSection() {
   const data = [
     {
       title: 'Personalized Workouts',
