@@ -11,7 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${raleway.className} debug-screens flex flex-col`}>
+      <body
+        className={`${raleway.className} debug-screens flex flex-col min-h-screen`}
+      >
         <Navbar />
         <main className="p-5 grow xl:w-[90%] 2xl:w-[75%] lg:mx-auto">
           {children}
