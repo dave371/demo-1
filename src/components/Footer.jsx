@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <footer
-      className={`p-5 mt-12 min-h-[150px] flex flex-col gap-5 items-center justify-center bg-secondary ${roboto.className}`}
+      className={`p-5 mt-12 min-h-[150px] flex flex-col gap-5 items-center justify-center w-full bg-secondary ${roboto.className}`}
     >
       <ul className="grid grid-cols-2 gap-10 md:flex md:justify-center md:items-center md:gap-5">
         {routes.map((route) => (

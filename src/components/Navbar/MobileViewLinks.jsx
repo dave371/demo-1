@@ -72,12 +72,14 @@ function MenuModal({ isOpen, setIsOpen }) {
                   key={route.name}
                   name={route.name}
                   route={route.path}
+                  setIsOpen={setIsOpen}
                 />
               ))}
               <li className="p-5">
                 <Button
                   onClick={() => {
-                    router.push('/pricing');
+                    router.push('/plans');
+                    setIsOpen(false);
                   }}
                   className={`px-3 py-1 w-full rounded-md bg-secondary hover:bg-opacity-80 hover:bg-accent-color font-medium text-lg`}
                 >
@@ -92,7 +94,7 @@ function MenuModal({ isOpen, setIsOpen }) {
   );
 }
 
-function NavLink({ name, route }) {
+function NavLink({ name, route, setIsOpen }) {
   const path = usePathname();
 
   return (
@@ -102,6 +104,7 @@ function NavLink({ name, route }) {
         className={`block w-full p-5 text-lg font-medium  hover:bg-secondary hover:text-main-text-color ${
           route === path ? 'text-accent-color' : ''
         }`}
+        onClick={() => setIsOpen(false)}
       >
         {name}
       </Link>
